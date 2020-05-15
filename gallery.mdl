@@ -1,0 +1,23 @@
+frames 50
+basename gallery
+constants shiny_purple 0.3 0.2 0.8 0.3 0 0 0.3 0.2 0.8
+constants shiny_teal 0.3 0.0 0.0 0.3 0.2 0.8 0.3 0.2 0.8
+constants dull_yellow 0.3 0.8 0.2 0.3 0.8 0.2 0 0 0
+constants dull_red 0.4 0.9 0.2 0.5 0.0 0.3 0.7 0 0
+constants shiny_blue 0.8 0.1 0.4 0.3 0.2 0.9 0.8 0.4 0.9
+push
+move 250 250 0
+box shiny_blue -15 -30 0 30 30 30
+push
+rotate z 10 tilt
+box dull_red -150 0 0 300 30 10
+push
+move 0 30 0 up
+sphere dull_yellow 120 10 0 10
+pop
+push
+move 0 -10 0 down
+sphere dull_yellow -120 40 0 30
+vary tilt 0 49 0 1
+vary down 0 49 0 1
+vary up 0 49 0 1
